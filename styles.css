@@ -1,0 +1,29 @@
+body {
+	margin: 0 auto;
+}
+/*Moves the yacht in the X direction at the given values.*/
+keyframes float {
+	0% {
+		transform: translateX(500px);
+
+	}
+	100% {
+		transform: translateX(-574px);
+	}
+}
+
+@-webkit-keyframes float {
+	0% {
+		transform: translateX(800px);
+
+	}
+	100% {
+		transform: translateX(-800px);
+	}
+}
+
+/*tells the yacht ID to perform the animation named "float" that takes 3s to complete animation cycle, animation loops infinitely*/
+#yacht {	
+	-webkit-animation: float 3s infinite;
+	animation: float 3s infinite;
+}
